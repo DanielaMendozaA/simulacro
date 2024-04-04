@@ -1,0 +1,316 @@
+/*Reseteo de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fuentes externas*/
+.chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+   
+  }
+
+/*Contenedores generales*/
+.cont-principal{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header  header"
+                         "main    main"
+                         "seccion aside"
+                         "footer footer";
+    justify-content: center;
+
+}
+
+.cont-sect-asid{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+/*--------------¡¡¡¡¡Header!!!!-------------------*/
+
+header{
+    grid-area: header;
+    background-image: url(/img/Mis\ viajes\ \(4\).png);
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+
+}
+
+/*Tamaño de los logos*/
+.cont-logo img{
+    width: 5vw;
+}
+
+.cont-redes img{
+    width: 5vh;
+}
+
+.icono-menu{
+    width: 2vw;
+}
+
+.icono-lupa{
+    width: 3vw;
+}
+
+/*Contenedores del header*/
+
+.cont-iconos, .cont-logo, .cont-redes, .cont-menu{
+    display: flex;
+}
+
+.cont-iconos{
+    justify-content: space-evenly;
+    background-color: rgba(24, 23, 23,0.6);
+    height: 20%;
+}
+
+.cont-redes{
+    gap: 0.5vh;
+    margin-left: 15% ;
+}
+
+.cont-menu{
+    gap: 2vw;
+}
+
+.cont-logo h2{
+    align-self: end;
+    font-size: 5vh;
+    color: aliceblue;
+}
+
+/*--------------¡¡¡¡¡Contenido principal!!!!-------------------*/
+main {
+    grid-area: main;
+    margin-top: 2.5%;
+    justify-self: center;
+}
+
+.cont-main{
+    display: flex;
+    gap: 1vw;
+}
+
+.cont-mag-sant{
+    display: grid;
+    gap: 1vw;
+    grid-template-rows: 40vh 30vh ;
+    width: 20vw;   
+}
+
+.cont-ant-amaz-ara{
+    display: grid;
+    gap: 1vw;
+    width: 40vw;
+    grid-template-columns: repeat(2, 1fr);
+                         
+}
+
+.cont-magdalena{
+    background-image: url(/img/santamarta.jpeg);
+}
+
+.cont-santader{
+    background-image: url(/img/Santander.jpg);
+}
+
+.cont-antioquia{
+    background-image: url(/img/antioquia.jpg);
+}
+
+.cont-amazonas{
+    background-image: url(/img/Amazonas.jpg);
+}
+
+.cont-arauca{
+    background-image: url(/img/arauca2.jpg);
+    grid-column: span 2;
+}
+
+.cont-magdalena, .cont-santader, .cont-antioquia, .cont-amazonas, .cont-arauca{
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.cont-main h3{
+    background-color: rgba(8, 8, 8,0.7);
+    width: 100%;
+    color: white;
+    padding: 5%;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 100;
+
+}
+
+/*--------------¡¡¡¡¡Sección!!!!-------------------*/
+
+section{
+    grid-area: seccion;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    height: 120vh;
+    overflow: scroll;
+    width: 40%;
+}
+
+hr{
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    color: #79FF39;
+}
+section img{
+    width: 15vw;    
+}
+
+.cont-seccion{
+    display: flex;
+    gap: 1vw;
+}
+
+.cont-seccion-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont-seccion-info h4{
+    color: #526DFF;
+    font-weight: 200;
+    font-size: larger;
+}
+
+.cont-seccion-info p{
+    text-align: justify;
+}
+
+.cont-info-interno{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-info-interno  a{
+    text-decoration: none;
+    color: #526DFF;
+    font-weight: 100;
+}
+
+
+/*--------------¡¡¡¡¡aside!!!!-------------------*/
+
+aside{
+    grid-area: aside;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+.cont-aside-1 img{
+    width: 100%;
+    height: 5vh;
+}
+
+.cont-aside-1 p{
+    text-align: justify;
+}
+
+.cont-aside-2 img{
+    width: 90%;
+
+}
+
+.cont-aside-3{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.cont-aside-3 div{
+
+display: flex;
+gap: 1vw;
+
+}
+
+.cont-aside-3 h3{
+    font-weight: 200;
+}
+
+.cont-aside-3 img{
+    width: 5vw;
+}
+
+.cont-aside-4 img{
+    width: 90%;
+}
+
+
+/*--------------¡¡¡¡¡footer!!!!-------------------*/
+footer{
+    grid-area: footer;
+    background-color: black;
+    height: 30vh;
+}
+
+footer img{
+    width: 1vw;
+}
+
+.cont-footer{
+    margin-top: 6%;
+    margin-right: 8%;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    
+}
+
+.iconos-footer{
+    display: flex;
+    margin-right: 10%;
+    gap: 2vh;
+}
+
+.cont-footer p{
+ margin-bottom: 2vh;
+ color: aliceblue;
+}
+
+.cont-footer a{
+    text-decoration: none;
+    background-color: gray;
+    color: aliceblue;
+    padding: 1vh;
+    position: absolute;
+    right: 0.08%;
+    border-radius: 5%;
+}
+
+.cont-footer input{
+    width: 20vw;
+    height: 60%;
+}
